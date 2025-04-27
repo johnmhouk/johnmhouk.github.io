@@ -59,8 +59,32 @@ footer {
   0% {
     transform: translateX(0) translateY(0);
   }
+  10% {
+    transform: translateX(2vw) translateY(-1vh);
+  }
+  20% {
+    transform: translateX(4vw) translateY(1vh);
+  }
+  30% {
+    transform: translateX(6vw) translateY(-0.5vh);
+  }
+  40% {
+    transform: translateX(8vw) translateY(1vh);
+  }
   50% {
-    transform: translateX(10vw) translateY(-2px);
+    transform: translateX(10vw) translateY(0);
+  }
+  60% {
+    transform: translateX(8vw) translateY(-1vh);
+  }
+  70% {
+    transform: translateX(6vw) translateY(1vh);
+  }
+  80% {
+    transform: translateX(4vw) translateY(0);
+  }
+  90% {
+    transform: translateX(2vw) translateY(-1vh);
   }
   100% {
     transform: translateX(0) translateY(0);
