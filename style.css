@@ -48,7 +48,7 @@ footer {
   z-index: 0;
   top: 10%;	
   width: 200px; /* you can adjust size */
-  animation: clouds 8s ease 0s infinite normal forwards;
+  animation: clouds 16s ease 0s infinite normal forwards;
     }
 
 .cloud img {
@@ -95,37 +95,37 @@ footer {
     /* Multiple clouds */
 .cloud:nth-child(1) {
 	left: 0%;
-	top: 15%;
+	top: 20%;
 	width: 15vw;
     }
 .cloud:nth-child(2) {
       right: 0%;
-      top: 25%;
+      top: 30%;
       width: 30vw;
-      animation: clouds 10s ease 0s infinite normal forwards;
+      animation: clouds 20s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(3) {
 	left: 0%;
-        top: 40%;
+        top: 45%;
 	width: 25vw;
-	animation: clouds 9s ease 0s infinite normal forwards;
+	animation: clouds 18s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(4) {
 	right: 50%;
-        top: 30%;
+        top: 35%;
 	width: 22vw;
-	animation: clouds 11s ease 0s infinite normal forwards;
+	animation: clouds 22s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(5) {
 	right: 0%;
-        top: 50%;
+        top: 55%;
 	width: 20vw;
-	animation: clouds 12s ease 0s infinite normal forwards;
+	animation: clouds 24s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(6) {
 	left: 0%;
-        top: 60%;
+        top: 65%;
 	width: 15vw;
-	animation: clouds 13s ease 0s infinite normal forwards;
+	animation: clouds 26s ease 0s infinite normal forwards;
     }
 
