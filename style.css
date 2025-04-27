@@ -6,7 +6,7 @@ body {
     }
 header {
       background: #4CAF50;
-      opacity: 0.5;
+      opacity: 0.2;
       color: white;
       padding: 1rem;
       text-align: center;
@@ -73,12 +73,12 @@ footer {
 }
 
     /* Multiple clouds */
+.cloud:nth-child(1) {
+      top: 10%;
+    }
 .cloud:nth-child(2) {
-      top: 40%;
+      top: 30%;
     }
 .cloud:nth-child(3) {
-      top: 60%;
-    }
-.cloud:nth-child(4) {
-      top: 30%;
+      top: 50%;
     }
