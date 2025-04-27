@@ -99,14 +99,14 @@ footer {
     }
 .cloud:nth-child(4) {
         position: relative;
-	right: 50vdw;
+	right: 50dvw;
 	top: 30dvh;
 	width: 22dvw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(5) {
         position: relative;
-	right: 0vdw;
+	right: 0dvw;
 	top: 60dvh;
 	width: 20dvw;
 	animation: clouds 7s ease 0s infinite normal forwards;
