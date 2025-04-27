@@ -82,17 +82,17 @@ footer {
 .cloud:nth-child(1) {
         position: right;
 	top: 20%;
-	width: 15%;
+	width: 250px;
     }
 .cloud:nth-child(2) {
       top: 50%;
-      width: 20%;
+      width: 400px;
       animation: clouds 10s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(3) {
         position: right;
 	top: 800%;
-	width: 25%;
+	width: 300px;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
-}
+
