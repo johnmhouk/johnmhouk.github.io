@@ -81,18 +81,35 @@ footer {
     /* Multiple clouds */
 .cloud:nth-child(1) {
         position: right;
-	top: 20%;
-	width: 250px;
+	top: 20vdh;
+	width: 20vw;
     }
 .cloud:nth-child(2) {
-      top: 50%;
-      width: 400px;
+      top: 50vdh;
+      width: 30vw;
       animation: clouds 10s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(3) {
         position: right;
-	top: 800%;
-	width: 300px;
+	top: 80vdh;
+	width: 25vw;
+	animation: clouds 5s ease 0s infinite normal forwards;
+    }
+.cloud:nth-child(4) {
+        position: right;
+	top: 30vdh;
+	width: 22vw;
+	animation: clouds 5s ease 0s infinite normal forwards;
+    }
+.cloud:nth-child(5) {
+        position: center;
+	top: 60vdh;
+	width: 20vw;
+	animation: clouds 5s ease 0s infinite normal forwards;
+    }
+.cloud:nth-child(6) {
+	top: 75vdh;
+	width: 15vw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 
