@@ -48,7 +48,7 @@ footer {
   z-index: 0;
   top: 10%;	
   width: 200px; /* you can adjust size */
-  animation: clouds 16s ease 0s infinite normal forwards;
+  animation: clouds 14s ease 0s infinite normal forwards;
     }
 
 .cloud img {
@@ -103,30 +103,30 @@ footer {
       right: 0%;
       top: 30%;
       width: 30vw;
-      animation: clouds 20s ease 0s infinite normal forwards;
+      animation: clouds 15s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(3) {
 	left: 0%;
         top: 45%;
 	width: 25vw;
-	animation: clouds 18s ease 0s infinite normal forwards;
+	animation: clouds 17s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(4) {
 	right: 50%;
         top: 35%;
 	width: 22vw;
-	animation: clouds 22s ease 0s infinite normal forwards;
+	animation: clouds 19s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(5) {
 	right: 0%;
         top: 55%;
 	width: 20vw;
-	animation: clouds 24s ease 0s infinite normal forwards;
+	animation: clouds 20s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(6) {
 	left: 0%;
         top: 65%;
 	width: 15vw;
-	animation: clouds 26s ease 0s infinite normal forwards;
+	animation: clouds 16s ease 0s infinite normal forwards;
     }
 
