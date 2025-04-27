@@ -12,7 +12,8 @@ header {
       	text-align: center;
     }
 nav {
-      	margin: 1rem;
+      	font-family: 'Cal Sans', sans-serif;
+	margin: 1rem;
       	text-align: center;
     }
 nav a {
@@ -105,11 +106,11 @@ footer {
         position: center;
 	top: 60dvh;
 	width: 20dvw;
-	animation: clouds 5s ease 0s infinite normal forwards;
+	animation: clouds 7s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(6) {
 	top: 75dvh;
 	width: 15dvw;
-	animation: clouds 5s ease 0s infinite normal forwards;
+	animation: clouds 4s ease 0s infinite normal forwards;
     }
 
