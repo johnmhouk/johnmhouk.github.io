@@ -35,61 +35,50 @@ footer {
       bottom: 0;
     }
 .cloud {
-      background: #fff;
-      background: radial-gradient(circle at 30% 30%, #fff 60%, #eee 100%);
-      border-radius: 50%;
-      position: absolute;
-      width: 100px;
-      height: 60px;
-      opacity: 0.8;
-      animation: floatClouds 60s linear infinite;
+  position: absolute;
+  width: 200px; /* you can adjust size */
+  opacity: 0.8;
+      animation: myAnim 5s ease 0s infinite normal forwards;
     }
 
-.cloud::before, .cloud::after {
-      content: '';
-      position: absolute;
-      background: inherit;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      top: -20px;
-      left: 10px;
-    }
+.cloud img {
+  width: 100%;
+  height: auto;
+}
 
-.cloud::after {
-      width: 60px;
-      height: 60px;
-      top: 10px;
-      left: 60px;
-    }
+@keyframes clouds {
+	0% {
+		transform: translate(0);
+	}
 
-@keyframes floatClouds {
-      0% {
-        left: -200px;
-        top: 20%;
-      }
-      50% {
-        top: 18%;
-      }
-      100% {
-        left: 100%;
-        top: 20%;
-      }
-    }
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
 
     /* Multiple clouds */
 .cloud:nth-child(2) {
       top: 40%;
-      animation-delay: 15s;
-      animation-duration: 80s;
     }
 .cloud:nth-child(3) {
       top: 60%;
-      animation-delay: 30s;
-      animation-duration: 70s;
     }
 .cloud:nth-child(4) {
       top: 30%;
-      animation-delay: 45s;
-      animation-duration: 90s;
     }
