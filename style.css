@@ -48,8 +48,9 @@ footer {
     }
 
 .cloud {
-  position: absolute;
+  position: relative;
   z-index: 0;
+  top: 10%;	
   width: 200px; /* you can adjust size */
   animation: clouds 8s ease 0s infinite normal forwards;
     }
@@ -87,35 +88,34 @@ footer {
 
     /* Multiple clouds */
 .cloud:nth-child(1) {
-        position: relative;
-	width: 20dvw;
+	width: 15vw;
     }
 .cloud:nth-child(2) {
-      position: relative;
-      right: 0dvw;
-      width: 30dvw;
+      right: 0%;
+      top: 5%;
+      width: 30vw;
       animation: clouds 10s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(3) {
-        position: relative;
-	width: 25dvw;
+        top: 8%;
+	width: 25vw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(4) {
-        position: relative;
-	right: 50dvw;
-	width: 22dvw;
+	right: 50%;
+        top: 7%;
+	width: 22vw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(5) {
-        position: relative;
-	right: 0dvw;
-	width: 20dvw;
+	right: 0%;
+        top: 6%;
+	width: 20vw;
 	animation: clouds 7s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(6) {
-	position: relative;
-	width: 15dvw;
+        top: 5%;
+	width: 15vw;
 	animation: clouds 4s ease 0s infinite normal forwards;
     }
 
