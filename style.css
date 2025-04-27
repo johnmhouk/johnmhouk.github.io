@@ -44,7 +44,6 @@ footer {
 .cloud {
   position: absolute;
   width: 200px; /* you can adjust size */
-  opacity: 0.8;
   animation: clouds 8s ease 0s infinite normal forwards;
     }
 
