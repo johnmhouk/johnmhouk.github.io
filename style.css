@@ -75,13 +75,17 @@ footer {
 
     /* Multiple clouds */
 .cloud:nth-child(1) {
-      top: 10%;
+        position: right;
+	top: 10%;
+	width: 250px;
     }
 .cloud:nth-child(2) {
       top: 30%;
+      width: 300px;
     }
 .cloud:nth-child(3) {
-      top: 50%;
+        position: right;
+	top: 50%;
     }
 
 .cal-sans-regular {
