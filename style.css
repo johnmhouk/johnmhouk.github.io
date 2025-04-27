@@ -81,35 +81,35 @@ footer {
     /* Multiple clouds */
 .cloud:nth-child(1) {
         position: right;
-	top: 20vdh;
-	width: 20vw;
+	top: 20dvh;
+	width: 20dvw;
     }
 .cloud:nth-child(2) {
-      top: 50vdh;
-      width: 30vw;
+      top: 50dvh;
+      width: 30dvw;
       animation: clouds 10s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(3) {
         position: right;
-	top: 80vdh;
-	width: 25vw;
+	top: 80dvh;
+	width: 25dvw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(4) {
         position: right;
-	top: 30vdh;
-	width: 22vw;
+	top: 30dvh;
+	width: 22dvw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(5) {
         position: center;
-	top: 60vdh;
-	width: 20vw;
+	top: 60dvh;
+	width: 20dvw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(6) {
-	top: 75vdh;
-	width: 15vw;
+	top: 75dvh;
+	width: 15dvw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 
