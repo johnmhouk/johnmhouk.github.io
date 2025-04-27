@@ -32,8 +32,8 @@ section {
 footer {
       font-family: 'Cal Sans', sans-serif;
       opacity: 0.1;
-      background: white;
       filter: blur(2px);
+      background: white;
       color: black;
       text-align: center;
       padding: 0.5rem;
