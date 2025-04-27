@@ -58,39 +58,160 @@ footer {
 
 @keyframes clouds {
   0% {
-    transform: translateX(0) translateY(0);
+    transform: translate(0, 0);
+  }
+  2% {
+    transform: translate(1px, -1px);
+  }
+  4% {
+    transform: translate(-2px, 1px);
+  }
+  6% {
+    transform: translate(3px, -2px);
+  }
+  8% {
+    transform: translate(-1px, 3px);
   }
   10% {
-    transform: translateX(2vw) translateY(-1vh);
+    transform: translate(2px, -3px);
+  }
+  12% {
+    transform: translate(-3px, 4px);
+  }
+  14% {
+    transform: translate(1px, -1px);
+  }
+  16% {
+    transform: translate(-2px, 2px);
+  }
+  18% {
+    transform: translate(3px, -2px);
   }
   20% {
-    transform: translateX(4vw) translateY(1vh);
+    transform: translate(-1px, 1px);
+  }
+  22% {
+    transform: translate(2px, -3px);
+  }
+  24% {
+    transform: translate(-3px, 2px);
+  }
+  26% {
+    transform: translate(1px, 3px);
+  }
+  28% {
+    transform: translate(-2px, -1px);
   }
   30% {
-    transform: translateX(6vw) translateY(-0.5vh);
+    transform: translate(3px, 1px);
+  }
+  32% {
+    transform: translate(-1px, 2px);
+  }
+  34% {
+    transform: translate(2px, -4px);
+  }
+  36% {
+    transform: translate(-3px, 3px);
+  }
+  38% {
+    transform: translate(1px, -2px);
   }
   40% {
-    transform: translateX(8vw) translateY(1vh);
+    transform: translate(2px, 4px);
+  }
+  42% {
+    transform: translate(-2px, -3px);
+  }
+  44% {
+    transform: translate(3px, 2px);
+  }
+  46% {
+    transform: translate(-1px, -1px);
+  }
+  48% {
+    transform: translate(2px, 1px);
   }
   50% {
-    transform: translateX(10vw) translateY(0);
+    transform: translate(0, 0);
+  }
+  52% {
+    transform: translate(1px, -2px);
+  }
+  54% {
+    transform: translate(-2px, 3px);
+  }
+  56% {
+    transform: translate(3px, -1px);
+  }
+  58% {
+    transform: translate(-1px, 2px);
   }
   60% {
-    transform: translateX(8vw) translateY(-1vh);
+    transform: translate(2px, -3px);
+  }
+  62% {
+    transform: translate(-3px, 2px);
+  }
+  64% {
+    transform: translate(1px, 1px);
+  }
+  66% {
+    transform: translate(-2px, -2px);
+  }
+  68% {
+    transform: translate(3px, 4px);
   }
   70% {
-    transform: translateX(6vw) translateY(1vh);
+    transform: translate(-1px, 3px);
+  }
+  72% {
+    transform: translate(2px, -4px);
+  }
+  74% {
+    transform: translate(-3px, 1px);
+  }
+  76% {
+    transform: translate(1px, 2px);
+  }
+  78% {
+    transform: translate(-2px, -1px);
   }
   80% {
-    transform: translateX(4vw) translateY(0);
+    transform: translate(3px, -2px);
+  }
+  82% {
+    transform: translate(-1px, 4px);
+  }
+  84% {
+    transform: translate(2px, -3px);
+  }
+  86% {
+    transform: translate(-3px, 2px);
+  }
+  88% {
+    transform: translate(1px, -1px);
   }
   90% {
-    transform: translateX(2vw) translateY(-1vh);
+    transform: translate(2px, 3px);
+  }
+  92% {
+    transform: translate(-2px, 1px);
+  }
+  94% {
+    transform: translate(3px, -4px);
+  }
+  96% {
+    transform: translate(-1px, 2px);
+  }
+  98% {
+    transform: translate(2px, -2px);
   }
   100% {
-    transform: translateX(0) translateY(0);
+    transform: translate(0, 0);
   }
 }
+
 
     /* Multiple clouds */
 .cloud:nth-child(1) {
