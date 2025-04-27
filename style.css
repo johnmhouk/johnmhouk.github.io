@@ -33,6 +33,7 @@ footer {
       font-family: 'Cal Sans', sans-serif;
       opacity: 0.1;
       background: white;
+      filter: blur(2px);
       color: black;
       text-align: center;
       padding: 1rem;
