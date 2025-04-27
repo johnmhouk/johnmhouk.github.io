@@ -81,39 +81,33 @@ footer {
     /* Multiple clouds */
 .cloud:nth-child(1) {
         position: relative;
-	top: 20dvh;
 	width: 20dvw;
     }
 .cloud:nth-child(2) {
       position: relative;
       right: 0dvw;
-      top: 50dvh;
       width: 30dvw;
       animation: clouds 10s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(3) {
         position: relative;
-	top: 80dvh;
 	width: 25dvw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(4) {
         position: relative;
 	right: 50dvw;
-	top: 30dvh;
 	width: 22dvw;
 	animation: clouds 5s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(5) {
         position: relative;
 	right: 0dvw;
-	top: 60dvh;
 	width: 20dvw;
 	animation: clouds 7s ease 0s infinite normal forwards;
     }
 .cloud:nth-child(6) {
 	position: relative;
-	top: 75dvh;
 	width: 15dvw;
 	animation: clouds 4s ease 0s infinite normal forwards;
     }
