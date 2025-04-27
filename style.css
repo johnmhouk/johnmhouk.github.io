@@ -38,7 +38,7 @@ footer {
   position: absolute;
   width: 200px; /* you can adjust size */
   opacity: 0.8;
-      animation: myAnim 5s ease 0s infinite normal forwards;
+  animation: cloud 5s ease 0s infinite normal forwards;
     }
 
 .cloud img {
