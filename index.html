@@ -20,106 +20,123 @@
       <h1>Hi my name is John Houk.</h1>
     </header>
 
-    <nav class="frosted-glass">
-      <a href="index.html">Home</a>
-      <a href="#aboutme"><span class="fa-solid fa-user"></span>About</a>
-      <a href="#projects"><span class="fa-solid fa-user"></span>Projects</a>
-      <a href="contact.html">Contact</a>
+    <nav class="frosted-glass nav-wrapper">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars open-icon"></i>
+        <i class="fa-solid fa-xmark close-icon" style="display: none"></i>
+      </button>
+      <div class="nav-links">
+        <a
+          href="index.html#"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+          >Home</a
+        >
+        <a href="index.html#aboutme"
+          ><span class="fa-solid fa-user"></span> About</a
+        >
+        <a href="index.html#projects"
+          ><span class="fa-solid fa-rocket"></span> Projects</a
+        >
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
 
-    <div class="hero">
-      <div class="jet">
-        <img src="images/jet.png" alt="Jet" />
-      </div>
-
-      <div class="rocket">
-        <img src="images/rocket.png" alt="Rocket" />
-      </div>
-
-      <div class="clouds">
-        <div class="cloud" style="left: 5%; top: 20%; width: 28vw; z-index: -1">
-          <img src="images/cloud1.png" alt="Cloud Left" />
+    <section id="home">
+      <div class="hero">
+        <div class="jet">
+          <img src="images/jet.png" alt="Jet" />
         </div>
-        <div
-          class="cloud"
-          style="left: 30%; top: 35%; width: 26vw; z-index: -2"
-        >
-          <img src="images/cloud3.png" alt="Cloud Center Left" />
+
+        <div class="rocket">
+          <img src="images/rocket.png" alt="Rocket" />
         </div>
-        <div
-          class="cloud"
-          style="right: 5%; top: 25%; width: 30vw; z-index: -1"
-        >
-          <img src="images/cloud2.png" alt="Cloud Right" />
+
+        <div class="clouds">
+          <div
+            class="cloud"
+            style="left: 5%; top: 0%; width: 28vw; z-index: -1"
+          >
+            <img src="images/cloud1.png" alt="Cloud Left" />
+          </div>
+          <div
+            class="cloud"
+            style="left: 60%; top: 0%; width: 35vw; z-index: -2"
+          >
+            <img src="images/cloud3.png" alt="Cloud Center Left" />
+          </div>
+          <div
+            class="cloud"
+            style="right: 30%; top: 37%; width: 30vw; z-index: -1"
+          >
+            <img src="images/cloud2.png" alt="Cloud Right" />
+          </div>
+        </div>
+
+        <div class="title">
+          <h1 class="content">
+            <ol>
+              <li><span>Aerospace Engineer</span></li>
+              <li><span>Systems Engineer</span></li>
+              <li><span>Programming Enthusiast</span></li>
+              <li><span>PC Builder</span></li>
+              <li><span>Fisherman</span></li>
+              <li><span>Snowboarder</span></li>
+              <li><span>Aerospace Engineer</span></li>
+            </ol>
+          </h1>
         </div>
       </div>
-
-      <div class="title">
-        <h1 class="content">
-          <ol>
-            <li><span>Aerospace Engineer</span></li>
-            <li><span>Systems Engineer</span></li>
-            <li><span>Programming Enthusiast</span></li>
-            <li><span>PC Builder</span></li>
-            <li><span>Fisherman</span></li>
-            <li><span>Snowboarder</span></li>
-            <li><span>Aerospace Engineer</span></li>
-          </ol>
-        </h1>
-      </div>
-    </div>
-
-    <div id="about-me" style="position: relative; top: -150px"></div>
-    <section class="about-me-section" style="margin-top: 40rem">
-      <div style="position: relative; top: -100px" id="aboutme"></div>
+    </section>
+    <section class="about-me-section" id="aboutme">
       <h2 style="font-size: 2.5rem">About Me</h2>
       <div class="about-content">
-        <div class="about-item frosted-glass">
+        <div class="about-item glass-card">
           <h3>Education</h3>
           <p>
-            Graduated in Fall 2023 with a Bachelor of Science in Aerospace
-            Engineering from the Georgia Institute of Technology.
+            I earned my Bachelor of Science in Aerospace Engineering from the
+            Georgia Institute of Technology in Fall 2023, following a strong
+            academic foundation built at Kennesaw State University. My studies
+            focused on propulsion and space systems engineering, and I developed
+            deep technical knowledge in high-performance vehicle design, orbital
+            mechanics, and fluid dynamics.
           </p>
           <p>
-            Transferred from Kennesaw State University in Spring 2021 after
-            completing foundational coursework in mechanical engineering and
-            mathematics.
-          </p>
-          <p>
-            Developed a strong focus in propulsion systems and space systems
-            engineering undergraduate studies.
-          </p>
-          <p>
-            Experienced in team-based projects, research assignments, and
-            multidisciplinary system design. Passionate about advancing
-            aerospace technology through innovation and collaboration.
+            My academic career was defined by a hands-on approach to learning
+            through team-based design challenges, lab projects, and systems
+            integration coursework. These experiences shaped my collaborative
+            mindset and sharpened my attention to detail—skills I now bring to
+            real-world engineering projects.
           </p>
           <div class="education-logos">
             <img src="images/college1.png" alt="College 1 Logo" />
             <img src="images/college2.png" alt="College 2 Logo" />
           </div>
         </div>
-        <div class="about-item frosted-glass">
-          <h3>Relevant Coursework</h3>
+
+        <div class="about-item glass-card">
+          <h3>Professional Interests</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
+            I currently work as a Systems Engineer. I take pride in designing,
+            evaluating, and supporting mission-critical systems that demand
+            precision, safety, and innovation.
+          </p>
+          <p>
+            I’m passionate about advancing aerospace and defense technologies by
+            combining systems thinking with practical engineering. My work
+            includes developing procedures, refining test strategies, and
+            engaging cross-functional teams to ensure every deliverable meets
+            technical and operational standards.
           </p>
         </div>
-        <div class="about-item frosted-glass">
+
+        <div class="about-item glass-card">
           <h3>Personal Interests</h3>
           <p>
-            Outside of engineering, I enjoy programming, building custom PCs,
-            fishing, and snowboarding.
-          </p>
-        </div>
-        <div class="about-item frosted-glass">
-          <h3>Other</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
+            When I'm not working on engineering problems, I enjoy snowboarding,
+            fishing, building custom PCs, and exploring new technology trends. I
+            also spend time programming passion projects and playing pickleball
+            with friends. My hobbies often reflect the same curiosity and
+            precision I bring to engineering.
           </p>
         </div>
       </div>
@@ -128,38 +145,60 @@
     <section class="projects-section" id="projects">
       <h2 style="font-size: 2.5rem">Projects</h2>
       <div class="projects-container">
-        <div class="project-card frosted-glass">
-          <h3>
-            Radiological study on biological specimens in a cislunar orbit
-          </h3>
+        <div class="project-card glass-card">
+          <h3>Cislunar CubeSat: Biological Radiation Study</h3>
+          <p><strong>Aug 2023 – Dec 2023</strong></p>
           <p>
-            Designed a theoretical low-earth orbit comms relay using modular
-            avionics systems.
+            Led design of CubeSat communication and onboard data handling
+            systems.
           </p>
+          <div class="project-more">
+            <p>
+              Ensured compliance with CubeSat standards and integration with
+              avionics and subsystems. Collaborated with subsystem leads to
+              develop and present mission plans using systems engineering
+              principles—aligning stakeholders, meeting deadlines, and
+              mitigating risks.
+            </p>
+            <p>Tools: SolidWorks</p>
+          </div>
+          <button class="read-more-btn">Read More</button>
         </div>
-        <div class="project-card frosted-glass">
-          <h3>Project 2</h3>
+
+        <div class="project-card glass-card">
+          <h3>Engine Cycle Analysis – Subsonic Jet</h3>
+          <p><strong>Nov 2022 – Dec 2022</strong></p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
+            Analyzed jet engine performance options using MATLAB for a
+            commercial airliner.
           </p>
+          <div class="project-more">
+            <p>
+              Compared ramjet, turbojet, and turbofan designs at subsonic
+              conditions. Delivered final recommendations based on performance
+              metrics and client criteria.
+            </p>
+            <p>Tools: MATLAB</p>
+          </div>
+          <button class="read-more-btn">Read More</button>
         </div>
-        <div class="project-card frosted-glass">
-          <h3>Project 3</h3>
+
+        <div class="project-card glass-card">
+          <h3>Model Rocket Design & Flight Testing</h3>
+          <p><strong>Jan 2021 – May 2021</strong></p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
+            Designed and launched rockets with iterative CAD simulations and
+            real-world testing.
           </p>
-        </div>
-        <div class="project-card frosted-glass">
-          <h3>Project 4</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
-          </p>
+          <div class="project-more">
+            <p>
+              Refined geometry using SolidWorks, performed launch tests, and
+              analyzed recovery dynamics and impact forces to improve future
+              models.
+            </p>
+            <p>Tools: MATLAB and SolidWorks</p>
+          </div>
+          <button class="read-more-btn">Read More</button>
         </div>
       </div>
     </section>
@@ -167,42 +206,58 @@
     <section class="skills-section">
       <h2 style="font-size: 2.5rem">Skills</h2>
       <div class="skills-content">
-        <div class="skills-item frosted-glass">
-          <h3>Title1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
-          </p>
+        <div class="skill-card glass-card">
+          <h3>Programming</h3>
+          <ul>
+            <li>MATLAB / Simulink</li>
+            <li>Java, JavaScript, C++, C#, Swift</li>
+            <li>HTML / CSS, LaTeX</li>
+          </ul>
         </div>
-        <div class="skills-item frosted-glass">
-          <h3>Title2</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
-          </p>
+
+        <div class="skill-card glass-card">
+          <h3>Development Tools</h3>
+          <ul>
+            <li>Visual Studio, Eclipse</li>
+            <li>Jira, Microsoft Office Suite</li>
+          </ul>
         </div>
-        <div class="skills-item frosted-glass">
-          <h3>Title3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
-          </p>
+
+        <div class="skill-card glass-card">
+          <h3>System Modeling</h3>
+          <ul>
+            <li>Siemens Teamcenter</li>
+            <li>Cameo Systems Modeling</li>
+          </ul>
         </div>
-        <div class="skills-item frosted-glass">
-          <h3>Title4</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos possimus exercitationem aspernatur accusantium,
-            laudantium numquam velit.
-          </p>
+
+        <div class="skill-card glass-card">
+          <h3>CAD & Simulation</h3>
+          <ul>
+            <li>SolidWorks, AutoCAD</li>
+            <li>XFOIL, AVL, ANSYS Fluent</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <footer class="frosted-glass">
+    <footer class="footer-glass">
+      <p style="color: rgb(255, 255, 255); font-size: 14px">
+        Designed by John Houk |
+        <a href="#" style="color: rgb(188, 188, 188); text-decoration: none"
+          >Jump to top</a
+        >
+      </p>
+      <p>
+        Connect with me:
+        <a
+          href="https://www.linkedin.com/in/johnmhouk/"
+          target="_blank"
+          style="color: #bbb"
+        >
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </p>
       <p>
         <a
           href="https://pngtree.com/freepng/3d-white-clouds-illustration_8832621.html"
@@ -218,27 +273,97 @@
       </p>
     </footer>
     <script>
-      const observer = new IntersectionObserver(
+      // Observer for jet/rocket/cloud animations
+      const animationObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             const target = entry.target;
+            target.style.animationPlayState = entry.isIntersecting
+              ? "running"
+              : "paused";
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".jet, .rocket, .cloud").forEach((el) => {
+        el.style.animationPlayState = "paused";
+        animationObserver.observe(el);
+      });
+    </script>
+
+    <script>
+      // Read more toggler
+      document.querySelectorAll(".read-more-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const more = button.previousElementSibling;
+          more.classList.toggle("open");
+          button.textContent = more.classList.contains("open")
+            ? "Show Less"
+            : "Read More";
+        });
+      });
+    </script>
+
+    <script>
+      const fadeObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              target.style.animationPlayState = "running";
+              entry.target.classList.add("visible");
             } else {
-              target.style.animationPlayState = "paused";
+              entry.target.classList.remove("visible");
             }
           });
         },
-        {
-          threshold: 0.1, // how much needs to be visible
-        }
+        { threshold: 0.15 }
       );
 
-      // Apply to elements with animation
-      document.querySelectorAll(".jet, .rocket, .cloud").forEach((el) => {
-        el.style.animationPlayState = "paused"; // pause initially
-        observer.observe(el);
+      document
+        .querySelectorAll(
+          ".glass-card, .skill-card, .project-card .footer-glass"
+        )
+        .forEach((el) => {
+          el.classList.add("fade-in");
+          fadeObserver.observe(el);
+        });
+    </script>
+    <script>
+      const navLinks = document.querySelectorAll("nav a");
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => link.classList.remove("active"));
+              const id = entry.target.getAttribute("id");
+              const activeLink = document.querySelector(`nav a[href*="${id}"]`);
+              if (activeLink) activeLink.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      document.querySelectorAll("section[id]").forEach((section) => {
+        sectionObserver.observe(section);
       });
+    </script>
+    <script>
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".nav-links");
+
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+        toggleBtn.classList.toggle("open"); // toggles the icon between hamburger and X
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) =>
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("open");
+          toggleBtn.classList.remove("open");
+        })
+      );
     </script>
   </body>
 </html>

@@ -1,29 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Houk</title>
- <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>John Houk</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - John Houk</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d8c16b5e3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER ABOVE NAV -->
+    <header class="name">
+      <h1>Hi my name is John Houk.</h1>
+    </header>
 
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="contact.html">Contact</a>
-  </nav>
+    <!-- NAVIGATION -->
+    <nav class="frosted-glass nav-wrapper">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars open-icon"></i>
+        <i class="fa-solid fa-xmark close-icon" style="display: none"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#aboutme"
+          ><span class="fa-solid fa-user"></span>About</a
+        >
+        <a href="index.html#projects"
+          ><span class="fa-solid fa-rocket"></span>Projects</a
+        >
+        <a
+          href="#contactme"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+          >Contact</a
+        >
+      </div>
+    </nav>
 
-  <section>
-    <h2>Get in contact with me!</h2>
-    <p></p>
-  </section>
+    <!-- CONTACT SECTION -->
+    <section id="contactme" class="about-me-section" style="min-height: 80vh">
+      <h2 style="font-size: 2.5rem; margin-bottom: 2rem">Get in Touch</h2>
+      <div
+        class="glass-card"
+        style="max-width: 600px; padding: 2rem; margin: 0 auto"
+      >
+        <p style="font-size: 1.2rem; color: #e0e0e0">
+          I'm always open to connecting about opportunities, collaborations, or
+          general inquiries.
+        </p>
 
-  <footer>
-  </footer>
-</body>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+          "
+        >
+          <a href="mailto:johnmhouk@gmail.com" class="contact-btn">
+            <i class="fa-solid fa-envelope"></i> Email Me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/johnmhouk/"
+            target="_blank"
+            class="contact-btn"
+          >
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-glass">
+      <p style="color: rgb(255, 255, 255); font-size: 14px">
+        Designed by John Houk |
+        <a
+          href="index.html"
+          style="color: rgb(188, 188, 188); text-decoration: none"
+          >Back to Home</a
+        >
+      </p>
+    </footer>
+    <script>
+      const fadeObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            } else {
+              entry.target.classList.remove("visible");
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      document
+        .querySelectorAll(
+          ".glass-card, .skill-card, .project-card .footer-glass"
+        )
+        .forEach((el) => {
+          el.classList.add("fade-in");
+          fadeObserver.observe(el);
+        });
+    </script>
+    <script>
+      const navLinks = document.querySelectorAll("nav a");
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => link.classList.remove("active"));
+              const id = entry.target.getAttribute("id");
+              const activeLink = document.querySelector(`nav a[href*="${id}"]`);
+              if (activeLink) activeLink.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      document.querySelectorAll("section[id]").forEach((section) => {
+        sectionObserver.observe(section);
+      });
+    </script>
+    <script>
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".nav-links");
+
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+        toggleBtn.classList.toggle("open"); // toggles the icon between hamburger and X
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) =>
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("open");
+          toggleBtn.classList.remove("open");
+        })
+      );
+    </script>
+  </body>
 </html>
